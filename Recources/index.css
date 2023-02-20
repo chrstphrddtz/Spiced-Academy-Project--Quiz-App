@@ -2,8 +2,12 @@
 
 #question-card {
     border: 2px solid black;
-    margin: 30px 0px;
+    width: 65%;
+    margin: 25px auto;
+    padding: 10px;
+    text-align: center;
 }
+
 
 
 
