@@ -43,9 +43,11 @@ a:hover {
 
 #title-section {
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     border-bottom: 2px solid black;
+    background-color: rgb(243, 240, 224);
     text-align: center;
     width: 100%;
 }
@@ -60,12 +62,18 @@ a:hover {
 
 footer {
     position: fixed;
+    z-index: 10;
+    background-color: rgb(243, 240, 224);
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: auto;
     border-top: 2px solid black;
     margin-top: 40px;
+}
+
+footer .icon-size {
+    width: 40px;
 }
 
 /* Navbar - Style */
@@ -78,5 +86,4 @@ footer {
 
 #navbar li {
     list-style: none;
-
 }
