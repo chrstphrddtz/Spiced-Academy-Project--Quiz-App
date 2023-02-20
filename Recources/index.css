@@ -1,0 +1,66 @@
+/* Intro - Section */
+
+#intro {
+    display: flex;
+    height: 550px;
+    justify-content: space-around;
+}
+
+/* Intro Text - Section */
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    flex: 0 1 auto;
+}
+
+.intro-text h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    margin: 50px 0;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.355);
+}
+
+.intro-text p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.about-me-button {
+    align-self: flex-start;
+    left: 50px;
+    position: relative;
+    width: 100px;
+    height: auto;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    padding: 2.5px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.355);
+}
+
+.about-me-button:hover {
+    box-shadow: none;
+    color: rgba(56, 65, 199, 1);
+    border-color: rgba(56, 65, 199, 1);
+}
+
+/* Intro Image - Section */
+
+.intro-image {
+    flex: 0 1 auto;
+}
+
+.intro-image img {
+    max-height: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.intro-image img:hover {
+    border-color: rgba(56, 65, 199, 1);
+}

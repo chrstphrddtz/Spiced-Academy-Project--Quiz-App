@@ -27,50 +27,57 @@ a:hover {
     color: rgba(56, 65, 199, 1);
 }
 
-/* Header Style */
+/* Title-Section Style */
 
-#header {
+#title-section {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(255, 254, 249);
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
+    border-bottom: 2px solid black;
+    text-align: center;
     width: 100%;
-    padding: 0 50px;
 }
 
-/* Probably not needed at all
-#title {
-    display: flex;
-    flex: 2 1 100px;
-    height: auto;
-    
+#title-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
 }
-*/
 
-#title a {
+#title-section a{
     color: black;
-    font-size: 1.5rem;
-    font-weight: 500;
     text-align: center;
     text-decoration: none;
     padding: 0 5px;
 }
 
-#title a:hover {
+#title-section h1 a:hover {
     color: rgba(56, 65, 199, 1);
 }
 
+
+
+/* Footer - Style */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid black;
+    margin-top: 40px;
+}
+
+/* Navbar - Style */
+
 #navbar {
     display: flex;
-    flex: 1 2 100px;
-    justify-content: right;
-    height: auto;
+    flex-direction: row;
 }
+
+
+
+/*
 
 #navbar a {
     color: black;
@@ -81,51 +88,4 @@ a:hover {
     padding: 5px;
 }
 
-.dropdown {
-    overflow: hidden;
-    float: right;
-}
-
-.dropdown .dropbtn {
-    border: none;
-    outline: none;
-    padding: 5px;
-    background-color: inherit;
-    color: black;
-    font-size: 1.55rem;
-    font-weight: 500;
-    font-family: inherit;
-}
-
-#navbar a:hover, .dropdown:hover .dropbtn {
-    color: rgba(56, 65, 199, 1);
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    background-color: inherit;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    z-index: 10;
-}
-
-.dropdown-content a {
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Footer Style */
-
-footer {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.8rem;
-    letter-spacing: 0.125rem;
-}
+*/
