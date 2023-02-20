@@ -1,4 +1,4 @@
-/* Title Section - Styles */
+/* Question Card - Styles */
 
 .question-card {
     position: relative;
@@ -18,6 +18,19 @@
     width: 50px;
 }
 
+.show-answer {
+    display: none;
+}
+
+#trigger:checked + .show-answer {
+    display: block;
+}
+
+#trigger {
+    display: none;
+  }
+
+/*
 .question-card button {
     width: 150px;
     height: auto;
@@ -33,6 +46,10 @@
     color: rgba(56, 65, 199, 1);
     border-color: rgba(56, 65, 199, 1);
 }
+*/
+
+
+
 
 
 
