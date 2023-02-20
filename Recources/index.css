@@ -39,11 +39,13 @@
     font-weight: 600;
 }
 
-.show-answer:hover {
+
+.show-answer:active {
     box-shadow: none;
-    color: rgba(56, 65, 199, 1);
-    border-color: rgba(56, 65, 199, 1);
+    color: rgb(144, 56, 199);
+    border-color: rgb(144, 56, 199);
 }
+
 
 .hidden-answer {
     display: none;
