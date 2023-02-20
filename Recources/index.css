@@ -12,8 +12,8 @@
 
 .question-card .icon-size {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -20px;
+    right: 40px;
     width: 50px;
 }
 
@@ -98,19 +98,4 @@
     background-color: rgb(208, 204, 180);
     border-radius: 5px;
 
-}
-
-
-
-
-/* Navbar - Style */
-
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#navbar li {
-    list-style: none;
 }

@@ -87,7 +87,3 @@ footer .icon-size {
 #navbar li {
     list-style: none;
 }
-
-#navbar li:hover {
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.355);
-}
