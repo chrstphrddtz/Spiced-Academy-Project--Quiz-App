@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+svg:hover {
+    color: rgba(56, 65, 199, 1);
+}
+
 a:hover {
     color: rgba(56, 65, 199, 1);
     
