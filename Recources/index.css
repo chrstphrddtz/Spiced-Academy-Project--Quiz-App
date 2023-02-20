@@ -12,17 +12,27 @@
     float: right;
 }
 
+#question-card h2 {
 
-
-
-
-/* Intro - Section */
-
-#intro {
-    display: flex;
-    height: 550px;
-    justify-content: space-around;
 }
+
+#question-card button {
+    width: 150px;
+    height: auto;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    padding: 2.5px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.355);
+}
+
+#question-card button:hover {
+    box-shadow: none;
+    color: rgba(56, 65, 199, 1);
+    border-color: rgba(56, 65, 199, 1);
+}
+
+
 
 /* Intro Text - Section */
 
