@@ -3,14 +3,14 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Figtree', sans-serif;
 }
 
 html {
     font-size: 16px;
     background-color: rgb(255, 254, 249);
-    margin: 0;
-    padding: 0;
 }
 
 button {
@@ -19,7 +19,7 @@ button {
 
 main {
     margin: 10px;
-    margin-top: 120px; /* Add a top margin to avoid content overlay */
+    margin-top: 80px; /* Add a top margin to avoid content overlay */
     width: auto;
 }
 
