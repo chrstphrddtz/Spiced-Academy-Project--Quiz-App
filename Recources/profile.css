@@ -1,2 +1,100 @@
 /* Profile Section */
 
+/* Image + Name */
+
+#profile-section {
+    width: 80%;
+    margin: auto;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.intro img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+
+/* About Me */
+
+.about-me {
+    margin: 80px 0;
+}
+
+.about-me h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 80%;
+}
+
+
+/* icons */
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.border {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: auto;
+    height: 80px;
+}
+
+.icons .border h4 {
+    font-size: 1.6rem;
+}
+
+
+/* settings */
+
+.settings h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.dark-mode-settings {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.dark-mode-icon {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    height: 30px;
+    width: 60px;
+    border-radius: 25px;
+}
+
+.dark-mode-switch {
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(31, 31, 31);  
+}
