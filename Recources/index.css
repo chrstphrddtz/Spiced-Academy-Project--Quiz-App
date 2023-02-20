@@ -1,3 +1,13 @@
+/* Title Section - Styles */
+
+#question-card {
+    border: 2px solid black;
+    margin: 30px 0px;
+}
+
+
+
+
 /* Intro - Section */
 
 #intro {
