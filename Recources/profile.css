@@ -88,11 +88,9 @@
 }
 
 .dark-mode-settings {
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
 }
 
 .dark-mode-icon {
