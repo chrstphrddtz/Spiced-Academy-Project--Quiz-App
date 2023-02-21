@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.question-card .icon-size {
+.question-card__icon {
     position: absolute;
     top: -20px;
     right: 40px;
