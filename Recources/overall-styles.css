@@ -1,5 +1,13 @@
 /* Overall Style */
 
+:root {
+    /* Colors */
+    --body-color: rgb(255, 254, 249);
+    --background-color: rgb(243, 240, 224);
+    --accent-color: rgb(144, 56, 199);
+    --hashtag-color: rgb(208, 204, 180);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +17,7 @@
 
 html {
     font-size: 16px;
-    background-color: rgb(255, 254, 249);
-}
-
-button {
-    background-color: rgb(255, 254, 249);
+    background-color: var(--body-color);
 }
 
 main {
@@ -29,7 +33,7 @@ a {
 }
 
 a:hover {
-    color: rgb(144, 56, 199);;
+    color: var(--accent-color);
 }
 
 /* Title-Section Style */
@@ -40,7 +44,7 @@ a:hover {
     top: 0;
     left: 0;
     border-bottom: 2px solid black;
-    background-color: rgb(243, 240, 224);
+    background-color: var(--background-color);
     text-align: center;
     height: 50px;
     width: 100%;
@@ -57,7 +61,7 @@ a:hover {
 footer {
     position: fixed;
     z-index: 10;
-    background-color: rgb(243, 240, 224);
+    background-color: var(--background-color);
     bottom: 0;
     left: 0;
     width: 100%;
