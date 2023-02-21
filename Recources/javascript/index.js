@@ -1,5 +1,17 @@
 // const mainElement = document.querySelector('[data-js="main"]');
 
+
+/*
+
+const toggleBookmarkIcon = document.getElementsByClassName("question-card--bookmark-icon");
+ 
+for (let i=0; i=toggleBookmarkIcon.length; i++)
+toggleBookmarkIcon.addEventListener("Click", () => {
+    toggleBookmarkIcon.classList.toggle("filled")
+})
+
+*/
+
 const changeBookmarkIcon01 = document.querySelector('[data-js="icon01"]');
 changeBookmarkIcon01.addEventListener("click", () => {
     changeBookmarkIcon01.classList.toggle("filled");
