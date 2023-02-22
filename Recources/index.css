@@ -1,6 +1,6 @@
 /* Question Card - Styles */
 
-.question-card {
+.card {
     position: relative;
     background-color: var(--background-color);
     border: 2px solid black;
@@ -10,17 +10,17 @@
     text-align: center;
 }
 
-.question-card h2 {
+.card h2 {
     margin-bottom: 50px;
 }
 
-.question {
+.card__question {
     padding: 40px;
 }
 
 /* Bookmark Icon on Index.html */
 
-.question-card--bookmark-icon {
+.card--bookmark-icon {
     position: absolute;
     top: -20px;
     right: 40px;
@@ -31,13 +31,13 @@
     background-size: contain;
 }
 
-.question-card--bookmark-icon.filled {
+.card--bookmark-icon.filled {
     background-image: url("./Images/bookmark_filled.png");
 }
 
 /* Bookmark Icon on bookmarks.html */
 
-.question-card--icon {
+.card--icon {
     position: absolute;
     top: -20px;
     right: 40px;
@@ -47,7 +47,7 @@
 
 /* Hidden Answer - Styles */
 
-.show-answer {
+.card--show-answer {
     width: auto;
     padding: 5px;
     border: 2px solid rgba(0, 0, 0, 0.7);
@@ -58,29 +58,29 @@
     font-weight: 600;
 }
 
-.show-answer:active {
+.card--show-answer:active {
     box-shadow: none;
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
 
-.hidden-answer {
+.card--hidden-answer {
     display: none;
     margin-top: 20px;
 }
 
-.hidden-answer p {
+.card--hidden-answer p {
     font-size: 1.1rem;
     margin: 0 auto;
     width: 80%;
 }
 
-#question-one:checked + .hidden-answer,
-#question-two:checked + .hidden-answer,
-#question-three:checked + .hidden-answer,
-#question-four:checked + .hidden-answer,
-#question-five:checked + .hidden-answer,
-#question-six:checked + .hidden-answer {
+#question-one:checked + .card--hidden-answer,
+#question-two:checked + .card--hidden-answer,
+#question-three:checked + .card--hidden-answer,
+#question-four:checked + .card--hidden-answer,
+#question-five:checked + .card--hidden-answer,
+#question-six:checked + .card--hidden-answer {
     display: block;
 }
 
@@ -96,12 +96,12 @@
 
 /* Hashtags - Styles */
 
-.hashtag-container {
+.card__hashtag-container {
     position: relative;
     margin-top: 30px;
 }
 
-.hashtags {
+.card__hashtag-container__hashtags {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -109,7 +109,7 @@
     align-items: flex-start;
 }
 
-.hashtags li {
+.card__hashtag-container__hashtags li {
     list-style: none;
     padding: 5px;
     margin: 5px;
