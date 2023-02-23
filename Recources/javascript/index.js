@@ -1,22 +1,3 @@
-const cardOneQuestion = [
-    "Question One",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text"
-]
-
-const cardOneAnswer = [
-    "Answer One",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text"
-]
-
-
 // const mainElement = document.querySelector('[data-js="main"]');
 
 // Toggle Bookmark Icon
@@ -25,43 +6,8 @@ const changeBookmarkIconTest = document.getElementsByClassName("card--bookmark-i
 for (let i=0; i<changeBookmarkIconTest.length; i++) {
      changeBookmarkIconTest[i].addEventListener("click", (event)=>{
         changeBookmarkIconTest[i].classList.toggle("filled")
-     })
- };
-
-
-
-
-
-
- 
-// const cards = document.getElementsByClassName("card");
-// for (let i=0; i<cards.length; i++) {
-//     cards[i].addEventListener("click", (event)=>{
-//         console.log("in cards event: ", event.target);
-//         event.target.innerHTML = "This is a Test Answer!";
-//     })
-// }
-
-
-
-// changeBookmarkIconTest[i].addEventListener("click", () => {
-//     changeBookmarkIconTest.classList.toggle("filled");
-// })
-
-
-
-/* Test Card - Button */
-
-// const showAnswerButton = () => {
-//     const answer = document.getElementsByClassName("card--hidden-answer-test");
-//     console.log("answer: ", answer);
-//     // .innerHTML = "This is a Test Answer!";
-//     console.log("Test Answer in console!")
-// }
-
-
-
-
+    })
+};
 
 /*
 const changeBookmarkIcon01 = document.querySelector('[data-js="icon01"]');
@@ -95,4 +41,57 @@ changeBookmarkIcon06.addEventListener("click", () => {
 });
 
 */
+
+// Show Answer Button
+
+// const cards = document.getElementsByClassName("card");
+// for (let i=0; i<cards.length; i++) {
+//     cards[i].addEventListener("click", (event)=>{
+//         console.log("in cards event: ", event.target);
+//         event.target.innerHTML = "This is a Test Answer!";
+//     })
+// }
+
+
+
+
+/* Test Card - Button */
+
+const showAnswerButton = () => {
+    const answer = document.getElementsByClassName("card--hidden-answer-test");
+    console.log("answer: ", answer);
+    // .innerHTML = "This is a Test Answer!";
+    console.log("Test Answer in console!")
+}
+
+
+
+
+
+
+
+
+
+
+const cardOneQuestion = [
+    "Question One",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text"
+]
+
+const cardOneAnswer = [
+    "Answer One",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text"
+]
+
+
+
+
 
