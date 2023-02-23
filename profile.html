@@ -12,21 +12,21 @@
 </head>
 <body>
     <!-- Title Section -->
-    <header id="title-section">
-        <h1><a href="./index.html">Brainwave</a></h1>
+    <header class="title-section">
+        <h1 class="title-section__title"><a href="./index.html">Brainwave</a></h1>
     </header>
 
     <main>
         <!-- Profile Section -->
-        <section id="profile-section">
-            <div class="intro">
-                <img src="./Recources/Images/2022.07.25_portrait_christoph_001.jpeg" alt="Portrait of Christoph Raddatz">
-                <h2>Christoph Raddatz</h2>
+        <section class="profile section">
+            <div class="profile__intro">
+                <img class="profile__picture" src="./Recources/Images/2022.07.25_portrait_christoph_001.jpeg" alt="Portrait of Christoph Raddatz">
+                <h2 class="profile__user-name">Christoph Raddatz</h2>
             </div>
 
-            <div class="about-me">
-                <h3>About Me</h3>
-                <p>
+            <div class="profile__about-me">
+                <h3 class="profile__title">About Me</h3>
+                <p class="profile__about-me__info">
                     I'm 34-year-old web developer in the making.
                     <br>
                     When I'm not coding, you'll find me at the bouldering gym or seeking out new sources of inspiration around the city. 
@@ -35,38 +35,43 @@
                     Thanks for stopping by my portfolio page - let's work together and make something awesome!
                 </p>
             </div>
+        </section>
 
-            <!-- Icon Section -->
-            <div class="icons">
-                <div class="question-icon border">
+        <!-- Icons Section -->
+        <section class="icons section">
+                <div class="icons__border">
                     <img src="./Recources/Images/question.png" alt="question icon" height="30px">
                     <h4>6</h4>
                 </div>
 
-                <div class="bookmark-icon border">
+                <div class="icons__border">
                     <img src="./Recources/Images/bookmark_filled.png" alt="bookmarks icon" height="30px">
                     <h4>3</h4>
                 </div>                
-            </div>
+        </section>
 
-            <!-- Settings Section -->
-            <div class="settings">
-                <h3>Settings</h3>
-                <div class="dark-mode-settings">
-                    <h4>Dark Mode</h4>
-                    <div class="dark-mode-icon">
-                        <div class="dark-mode-switch"></div>
-                    </div>
+        <!-- Settings Section -->
+        <section class="settings section">
+            <h3 class="settings__title">Settings</h3>
+            
+            <!-- Dark Mode Settings -->
+            <div class="settings__dark-mode">
+                <h4 class="settings__option--title">Dark Mode</h4>
+                <div class="settings__dark-mode__icon">
+                    <div class="settings__dark-mode__switch"></div>
                 </div>
             </div>
+            <!-- Potentioal More Settings -->
+            <!-- E.g. Change Password etc -->
+
         </section>
     </main>
 
     <footer>
-        <ul id="navbar">
-                <li><a href="./index.html"><img class="icon" src="./Recources/Images/home.png" alt="home icon"></a></li>
-                <li><a href="./bookmarks.html"><img class="icon" src="./Recources/Images/bookmark_transparent.png" alt="bookmark icon"></a></li>
-                <li><a href="./profile.html"><img class="icon" src="./Recources/Images/profile_filled.png" alt="profile icon"></a></li>
+        <ul class="navbar">
+                <li><a href="./index.html"><img class="navbar--icon" src="./Recources/Images/home.png" alt="home icon"></a></li>
+                <li><a href="./bookmarks.html"><img class="navbar--icon" src="./Recources/Images/bookmark_transparent.png" alt="bookmark icon"></a></li>
+                <li><a href="./profile.html"><img class="navbar--icon" src="./Recources/Images/profile_filled.png" alt="profile icon"></a></li>
         </ul>
     </footer>
 </body>

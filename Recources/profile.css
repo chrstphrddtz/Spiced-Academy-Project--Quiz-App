@@ -1,8 +1,18 @@
 /* Profile Section */
 
-/* Image + Name */
+/* Section Titles */
 
-.intro {
+.profile__title, 
+.settings__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* -- Image + Name */
+
+.profile__intro {
     display: flex;
     align-items: center;
     align-content: center;
@@ -10,7 +20,7 @@
     margin-bottom: 30px;
 }
 
-.intro img{
+.profile__picture {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -18,40 +28,33 @@
     border-radius: 50%;
 }
 
+/* -- About Me */
 
-/* About Me */
-
-.about-me {
+.profile__about-me {
     margin: 0 auto;
     width: 90%;
     margin-bottom: 30px;
 }
 
-.about-me h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-.about-me p {
+.profile__about-me__info {
     font-size: 1.2rem;
     text-align: left;
 }
 
 
-/* icons */
+/* Icons */
 
 .icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.6rem;
     width: 90%;
     margin: auto;
     margin-bottom: 40px;
 }
 
-.border {
+.icons__border {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -64,36 +67,27 @@
     height: 70px;
 }
 
-.icons .border h4 {
-    font-size: 1.6rem;
-}
 
-
-/* settings */
+/* Settings */
 
 .settings {
     width: 90%;
     margin: auto;
 }
 
-.settings h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-.settings h4 {
+.settings__option--title {
     font-size: 1.2rem;
 }
 
-.dark-mode-settings {
+/* -- Dark Mode */
+
+.settings__dark-mode {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.dark-mode-icon {
+.settings__dark-mode__icon {
     display: flex;
     align-items: center;
     border: 2px solid black;
@@ -102,10 +96,12 @@
     border-radius: 25px;
 }
 
-.dark-mode-switch {
+.settings__dark-mode__switch {
     border: 2px solid black;
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-color: rgb(31, 31, 31);  
 }
+
+/* Others */

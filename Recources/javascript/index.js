@@ -1,3 +1,22 @@
+const cardOneQuestion = [
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text"
+]
+
+const cardOneAnswer = [
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text",
+    "Placeholder Text"
+]
+
+
 // const mainElement = document.querySelector('[data-js="main"]');
 
 

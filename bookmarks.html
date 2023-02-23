@@ -11,29 +11,32 @@
     <link href="./Recources/stylesheets.css" type="text/css" rel="stylesheet">
     <script src="./Recources/javascript/index.js" defer></script>
 </head>
+
 <body>
     <!-- Title Section -->
-    <header id="title-section">
-        <h1><a href="./index.html">Brainwave</a></h1>
+    <header class="title-section">
+        <h1 class="title-section__title"><a href="./index.html">Brainwave</a></h1>
     </header>
 
-    <main>
+    <main data-js="main">
         <!-- Card Two -->
-        <section class="question-card">
-            <img class="question-card--icon" src="./Recources/Images/bookmark_filled.png" alt="bookmark icon">
-            
-            <div class="question">
-                <h2>Which property defines the direction of the main axis in a Flex container?</h2>
+        <section class="card">
+            <!-- Bookmark Icon -->
+            <div class="card--bookmark-icon" data-js="icon01"></div>
+
+            <div class="card__question">
+                <h2 class="card__title">Which property defines the direction of the main axis in a Flex container?</h2>
                 <!-- Hidden Answer -->
-                <label class="show-answer" for="question-two">Show Answer</label>
+                <label class="card--show-answer" for="question-two">Show Answer</label>
                 <input type="checkbox" id="question-two">
-                <div class="hidden-answer">
+                <div class="card--hidden-answer">
                     <p>Answer: flex-direction.</p>
                 </div>
             </div>
-
-            <div class="hashtag-container">
-                <ul class="hashtags">
+            
+            <!-- Hashtags -->
+            <div class="card__hashtag-container">
+                <ul class="card__hashtag-container__hashtags">
                     <li>#html</li>
                     <li>#css</li>
                     <li>#flexbox</li>
@@ -41,22 +44,24 @@
             </div>
         </section>
 
-        <!-- Card Three -->
-        <section class="question-card">
-            <img class="question-card--icon" src="./Recources/Images/bookmark_filled.png" alt="bookmark icon">
+        <!-- Card Four -->
+        <section class="card">
+            <!-- Bookmark Icon -->
+            <div class="card--bookmark-icon" data-js="icon02"></div>
             
-            <div class="question">
-                <h2>Which value of justify-content aligns items at the center of a container?</h2>
+            <div class="card__question">
+                <h2 class="card__title">Which property aligns items at the center of a container vertically?</h2>
                 <!-- Hidden Answer -->
-                <label class="show-answer" for="question-three">Show Answer</label>
-                <input type="checkbox" id="question-three">
-                <div class="hidden-answer">
-                    <p>Answer: center.</p>
+                <label class="card--show-answer" for="question-four">Show Answer</label>
+                <input type="checkbox" id="question-four">
+                <div class="card--hidden-answer">
+                    <p>Answer: align-items.</p>
                 </div>
             </div>
 
-            <div class="hashtag-container">
-                <ul class="hashtags">
+            <!-- Hashtags -->
+            <div class="card__hashtag-container">
+                <ul class="card__hashtag-container__hashtags">
                     <li>#html</li>
                     <li>#css</li>
                     <li>#flexbox</li>
@@ -64,35 +69,38 @@
             </div>
         </section>
 
-        <!-- Card Five -->
-        <section class="question-card">
-            <img class="question-card--icon" src="./Recources/Images/bookmark_filled.png" alt="bookmark icon">
+        <!-- Card Six -->
+        <section class="card">
+            <!-- Bookmark Icon -->
+            <div class="card--bookmark-icon" data-js="icon03"></div>
             
-            <div class="question">
-                <h2>Which property specifies the spacing between items in a container?</h2>
+            <div class="card__question">
+                <h2 class="card__title">Which value of flex-wrap allows items to wrap onto multiple lines?</h2>
                 <!-- Hidden Answer -->
-                <label class="show-answer" for="question-five">Show Answer</label>
-                <input type="checkbox" id="question-five">
-                <div class="hidden-answer">
-                    <p>Answer: gap.</p>
+                <label class="card--show-answer" for="question-six">Show Answer</label>
+                <input type="checkbox" id="question-six">
+                <div class="card--hidden-answer">
+                    <p>Answer: wrap.</p>
                 </div>
             </div>
 
-            <div class="hashtag-container">
-                <ul class="hashtags">
+            <!-- Hashtags -->
+            <div class="card__hashtag-container">
+                <ul class="card__hashtag-container__hashtags">
                     <li>#html</li>
                     <li>#css</li>
                     <li>#flexbox</li>
                 </ul>
             </div>
         </section>
+
     </main>
 
     <footer>
-        <ul id="navbar">
-                <li><a href="./index.html"><img class="icon" src="./Recources/Images/home.png" alt="home icon"></a></li>
-                <li><a href="./bookmarks.html"><img class="icon" src="./Recources/Images/bookmark_filled.png" alt="bookmark icon"></a></li>
-                <li><a href="./profile.html"><img class="icon" src="./Recources/Images/profile.png" alt="profile icon"></a></li>
+        <ul class="navbar">
+                <li><a href="./index.html"><img class="navbar--icon" src="./Recources/Images/home.png" alt="home icon"></a></li>
+                <li><a href="./bookmarks.html"><img class="navbar--icon" src="./Recources/Images/bookmark_filled.png" alt="bookmark icon"></a></li>
+                <li><a href="./profile.html"><img class="navbar--icon" src="./Recources/Images/profile.png" alt="profile icon"></a></li>
         </ul>
     </footer>
 </body>
