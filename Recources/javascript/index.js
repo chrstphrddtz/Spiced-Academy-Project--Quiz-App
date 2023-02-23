@@ -1,5 +1,5 @@
 const cardOneQuestion = [
-    "Placeholder Text",
+    "Question One",
     "Placeholder Text",
     "Placeholder Text",
     "Placeholder Text",
@@ -8,7 +8,7 @@ const cardOneQuestion = [
 ]
 
 const cardOneAnswer = [
-    "Placeholder Text",
+    "Answer One",
     "Placeholder Text",
     "Placeholder Text",
     "Placeholder Text",
@@ -19,18 +19,26 @@ const cardOneAnswer = [
 
 // const mainElement = document.querySelector('[data-js="main"]');
 
-
-/*
-
-const toggleBookmarkIcon = document.getElementsByClassName("question-card--bookmark-icon");
- 
-for (let i=0; i=toggleBookmarkIcon.length; i++)
-toggleBookmarkIcon.addEventListener("Click", () => {
-    toggleBookmarkIcon.classList.toggle("filled")
+const changeBookmarkIconTest = document.getElementsByClassName("card--bookmark-icon");
+for (let i=0; i<changeBookmarkIconTest.length; i++)
+changeBookmarkIconTest[i].addEventListener("click", () => {
+    changeBookmarkIconTest.classList.toggle("filled");
 })
 
-*/
 
+
+/* Test Card - Button */
+
+const showAnswerButton = () => {
+    document.getElementsByClassName("card--hidden-answer-test").innerHTML = "This is a Test Answer!";
+    console.log("Test Answer in console!")
+}
+
+
+
+
+
+/*
 const changeBookmarkIcon01 = document.querySelector('[data-js="icon01"]');
 changeBookmarkIcon01.addEventListener("click", () => {
     changeBookmarkIcon01.classList.toggle("filled");
@@ -61,5 +69,5 @@ changeBookmarkIcon06.addEventListener("click", () => {
     changeBookmarkIcon06.classList.toggle("filled");
 });
 
-
+*/
 
