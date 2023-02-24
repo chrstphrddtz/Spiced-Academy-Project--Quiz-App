@@ -55,7 +55,7 @@ changeBookmarkIcon06.addEventListener("click", () => {
 
 
 
-/* Test Card - Button */
+// Test Card - Button
 
 const showAnswerButton = () => {
     const answer = document.getElementsByClassName("card--hidden-answer-test");
@@ -71,7 +71,7 @@ const showAnswerButton = () => {
 
 
 
-
+// Question / Answer - Arrays
 
 const cardOneQuestion = [
     "Question One",
