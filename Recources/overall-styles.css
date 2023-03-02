@@ -104,11 +104,11 @@ footer {
     }
 
     /* Profile */
-    .section {
+    /* .section {
         min-width: 445px;
         width: 50%;
         margin: auto;
-    }
+    } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -125,11 +125,11 @@ footer {
     }
 
     /* Profile */
-    .section {
+    /* .section {
         min-width: 445px;
         width: 50%;
         margin: auto;
-    }
+    } */
     
 }
 
@@ -147,11 +147,11 @@ footer {
     }
 
     /* Profile */
-    .section {
+    /* .section {
         min-width: 445px;
         width: 50%;
         margin: auto;
-    }
+    } */
 }
 
 @media screen and (max-width: 480px) {
@@ -168,9 +168,10 @@ footer {
     }
 
     /* Profile */
-    .section {
+    /* .section {
         min-width: 445px;
         width: 50%;
         margin: auto;
-    }
+    } */
+
 }

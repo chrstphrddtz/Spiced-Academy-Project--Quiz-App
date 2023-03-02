@@ -1,0 +1,57 @@
+/* Form Stylings */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* Label Styling */
+
+.form--label {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Input Styling */
+
+.form--textarea {
+    resize: none;
+    font-size: 1rem;
+    margin: 5px 0 20px 0;
+    padding: 5px; 
+    line-height: 1.5;
+}
+
+
+/* Button */
+
+.form--submit {
+    width: auto;
+    margin: 20px auto;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.355);
+    background-color: var(--background-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.form--submit:hover {
+    border-color: var(--accent-color);
+}
+
+.form--submit:active {
+    box-shadow: none;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}

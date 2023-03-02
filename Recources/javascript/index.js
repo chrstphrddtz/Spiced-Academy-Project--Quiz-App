@@ -24,4 +24,3 @@ for (let i=0; i<buttons.length; i++) {
     e.target.nextElementSibling.classList.toggle("card--visible")
     })
 };
-
