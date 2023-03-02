@@ -44,7 +44,7 @@
     border: 2px solid rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.355);
-    background-color: var(--background-color);
+    background-color: var(--button-background-color);
     font-size: 1.1rem;
     font-weight: 600;
     transition: all 0.2s ease;
@@ -109,6 +109,6 @@
 
 .hashtags:hover {
     /* color: var(--hashtag-text-color--hover); */
-    background-color: var(--hashtag-text-color--hover);
+    background-color: var(--hover-color);
 
 }

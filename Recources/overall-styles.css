@@ -2,11 +2,14 @@
 
 :root {
     /* Colors */
-    --body-color: rgb(255, 254, 249);
-    --background-color: rgb(243, 240, 224);
-    --accent-color: rgb(56, 199, 125);
-    --hashtag-color: rgb(208, 204, 180);
-    --hashtag-text-color--hover: rgb(190, 99, 140);
+    --background-color: rgb(233, 196, 106);
+    --title-footer: rgb(231, 111, 81);
+
+    --button-background-color: rgb(244, 162, 97);
+    --hashtag-color: rgb(223, 172, 41);
+
+    --hover-color: rgb(241, 172, 155);
+
 }
 
 * {
@@ -34,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: var(--hover-color);
 }
 
 /* Title-Section Style */
@@ -45,7 +48,7 @@ a:hover {
     top: 0;
     left: 0;
     border-bottom: 2px solid black;
-    background-color: var(--background-color);
+    background-color: var(--title-footer);
     text-align: center;
     height: 50px;
     width: 100%;
@@ -62,7 +65,7 @@ a:hover {
 footer {
     position: fixed;
     z-index: 10;
-    background-color: var(--background-color);
+    background-color: var(--title-footer);
     bottom: 0;
     left: 0;
     width: 100%;
