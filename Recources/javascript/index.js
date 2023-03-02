@@ -4,7 +4,7 @@
 const changeBookmarkIconTest = document.getElementsByClassName("card--bookmark-icon");
 
 for (let i=0; i<changeBookmarkIconTest.length; i++) {
-     changeBookmarkIconTest[i].addEventListener("click", (event)=>{
+     changeBookmarkIconTest[i].addEventListener("click", () => {
         changeBookmarkIconTest[i].classList.toggle("filled")
     })
 };
@@ -46,9 +46,9 @@ changeBookmarkIcon06.addEventListener("click", () => {
 
 // const cards = document.getElementsByClassName("card");
 // for (let i=0; i<cards.length; i++) {
-//     cards[i].addEventListener("click", (event)=>{
-//         console.log("in cards event: ", event.target);
-//         event.target.innerHTML = "This is a Test Answer!";
+//     cards[i].addEventListener("click", (e)=>{
+//         console.log("in cards event: ", e.target);
+//         e.target.innerHTML = "This is a Test Answer!";
 //     })
 // }
 
@@ -63,35 +63,3 @@ const showAnswerButton = () => {
     // .innerHTML = "This is a Test Answer!";
     console.log("Test Answer in console!")
 }
-
-
-
-
-
-
-
-
-// Question / Answer - Arrays
-
-const cardOneQuestion = [
-    "Question One",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text"
-]
-
-const cardOneAnswer = [
-    "Answer One",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text",
-    "Placeholder Text"
-]
-
-
-
-
-
