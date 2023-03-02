@@ -42,13 +42,13 @@ changeBookmarkIcon06.addEventListener("click", () => {
 
 */
 
-// Show Answer Button
+// Show Answer Button - In Progress
 
 // const cards = document.getElementsByClassName("card");
 // for (let i=0; i<cards.length; i++) {
 //     cards[i].addEventListener("click", (e)=>{
 //         console.log("in cards event: ", e.target);
-//         e.target.innerHTML = "This is a Test Answer!";
+//         // e.target.innerHTML = "This is a Test Answer!";
 //     })
 // }
 
@@ -57,9 +57,9 @@ changeBookmarkIcon06.addEventListener("click", () => {
 
 // Test Card - Button
 
-const showAnswerButton = () => {
-    const answer = document.getElementsByClassName("card--hidden-answer-test");
-    console.log("answer: ", answer);
-    // .innerHTML = "This is a Test Answer!";
-    console.log("Test Answer in console!")
-}
+// const showAnswerButton = () => {
+//     const answer = document.getElementsByClassName("card--hidden-answer");
+//     console.log("answer: ", answer);
+//     // .innerHTML = "This is a Test Answer!";
+//     console.log("Test Answer in console!")
+// }

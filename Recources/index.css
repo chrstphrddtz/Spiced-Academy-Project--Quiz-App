@@ -44,7 +44,6 @@
     background-image: url("./Images/bookmark_filled.png");
 }
 
-
 /* Hidden Answer - Styles */
 
 .card--show-answer {
@@ -56,7 +55,9 @@
     background-color: var(--background-color);
     font-size: 1.1rem;
     font-weight: 600;
+    transition: border 2s ease;
 }
+
 
 .card--show-answer:active {
     box-shadow: none;
@@ -106,4 +107,33 @@
     background-color: var(--hashtag-color);
     border-radius: 5px;
     font-size: 0.9rem;
+}
+
+
+/* Media Quesries */
+
+@media screen and (max-width: 1600px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 60%;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        min-width: 215px;
+        width: 80%;
+
+    }   
 }
