@@ -85,3 +85,36 @@ footer {
 .navbar--icon {
     width: 40px;
 }
+
+
+
+/* Media Quesries */
+
+@media screen and (max-width: 1600px) {
+    .card {
+        min-width: 498px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        min-width: 445px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        min-width: 364px;
+        width: 60%;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        min-width: 215px;
+        width: 80%;
+
+    }   
+}
