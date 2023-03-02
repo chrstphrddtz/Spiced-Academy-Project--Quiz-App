@@ -6,13 +6,14 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
 
     const formElements = e.target.elements  
+    const main = document.querySelector('[data-js="main"]')
 
     const questionInput = formElements.yourQuestion.value
     const answerInput = formElements.yourAnswer.value
     const hashtagsInput = formElements.yourHashtags.value
 
 
-    document.body.append(newCard(questionInput, answerInput, hashtagsInput))
+    main.append(newCard(questionInput, answerInput, hashtagsInput))
 
     console.log(newCard(questionInput, answerInput, hashtagsInput));
 
@@ -119,7 +120,7 @@ function createHashtagList(tags) {
 function createListItem(tags) {
     const listItem = document.createElement("li")
     listItem.classList.add("hashtags")
-    listItem.textContent = tags
+    listItem.textContent = "#" + tags
 
     return listItem
 } 
