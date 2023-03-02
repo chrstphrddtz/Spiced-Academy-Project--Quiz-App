@@ -1,7 +1,7 @@
 // const mainElement = document.querySelector('[data-js="main"]');
 
 // Toggle Bookmark Icon
-const changeBookmarkIconTest = document.getElementsByClassName("card--bookmark-icon");
+const changeBookmarkIconTest = document.getElementsByClassName("card--bookmark-icon")
 
 for (let i=0; i<changeBookmarkIconTest.length; i++) {
      changeBookmarkIconTest[i].addEventListener("click", () => {
@@ -9,57 +9,19 @@ for (let i=0; i<changeBookmarkIconTest.length; i++) {
     })
 };
 
-/*
-const changeBookmarkIcon01 = document.querySelector('[data-js="icon01"]');
-changeBookmarkIcon01.addEventListener("click", () => {
-    changeBookmarkIcon01.classList.toggle("filled");
-});
+// Show Answer Button 
 
-const changeBookmarkIcon02 = document.querySelector('[data-js="icon02"]');
-changeBookmarkIcon02.addEventListener("click", () => {
-    changeBookmarkIcon02.classList.toggle("filled");
-});
+const buttons = document.getElementsByClassName("card--show-answer")
 
-const changeBookmarkIcon03 = document.querySelector('[data-js="icon03"]');
-changeBookmarkIcon03.addEventListener("click", () => {
-    changeBookmarkIcon03.classList.toggle("filled");
-});
+for (let i=0; i<buttons.length; i++) {
+    buttons[i].addEventListener("click", (e) => {
+        if (e.target.textContent === "Show Answer") {
+            e.target.textContent = "Hide Answer"
+        } else {
+            e.target.textContent = "Show Answer"
+        };
+        
+    e.target.nextElementSibling.classList.toggle("card--visible")
+    })
+};
 
-const changeBookmarkIcon04 = document.querySelector('[data-js="icon04"]');
-changeBookmarkIcon04.addEventListener("click", () => {
-    changeBookmarkIcon04.classList.toggle("filled");
-});
-
-const changeBookmarkIcon05 = document.querySelector('[data-js="icon05"]');
-changeBookmarkIcon05.addEventListener("click", () => {
-    changeBookmarkIcon05.classList.toggle("filled");
-});
-
-const changeBookmarkIcon06 = document.querySelector('[data-js="icon06"]');
-changeBookmarkIcon06.addEventListener("click", () => {
-    changeBookmarkIcon06.classList.toggle("filled");
-});
-
-*/
-
-// Show Answer Button - In Progress
-
-// const cards = document.getElementsByClassName("card");
-// for (let i=0; i<cards.length; i++) {
-//     cards[i].addEventListener("click", (e)=>{
-//         console.log("in cards event: ", e.target);
-//         // e.target.innerHTML = "This is a Test Answer!";
-//     })
-// }
-
-
-
-
-// Test Card - Button
-
-// const showAnswerButton = () => {
-//     const answer = document.getElementsByClassName("card--hidden-answer");
-//     console.log("answer: ", answer);
-//     // .innerHTML = "This is a Test Answer!";
-//     console.log("Test Answer in console!")
-// }

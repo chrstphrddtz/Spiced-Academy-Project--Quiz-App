@@ -55,13 +55,12 @@
     background-color: var(--background-color);
     font-size: 1.1rem;
     font-weight: 600;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 .card--show-answer:hover {
     border-color: var(--accent-color);
 }
-
 
 .card--show-answer:active {
     box-shadow: none;
@@ -74,14 +73,16 @@
     margin-top: 20px;
 }
 
+/* Applied by Javascript */
+.card--visible {
+    display: block;
+}
+/* --------------------- */
+
 .card--hidden-answer p {
     font-size: 1.1rem;
     margin: 0 auto;
     width: 80%;
-}
-
-.card__question > input:checked + .card--hidden-answer {
-    display: block;
 }
 
 .card__question input {
