@@ -18,6 +18,7 @@
     align-content: center;
     justify-content: space-around;
     margin-bottom: 30px;
+    
 }
 
 .profile__picture {
@@ -32,11 +33,12 @@
 
 .profile__about-me {
     margin: 0 auto;
-    width: 90%;
     margin-bottom: 30px;
 }
 
 .profile__about-me__info {
+    width: 90%;
+    margin: auto;
     font-size: 1.2rem;
     text-align: left;
 }
@@ -49,7 +51,6 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.6rem;
-    width: 90%;
     margin: auto;
     margin-bottom: 40px;
 }
@@ -71,7 +72,6 @@
 /* Settings */
 
 .settings {
-    width: 90%;
     margin: auto;
 }
 
@@ -85,6 +85,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
 
 .settings__dark-mode__icon {

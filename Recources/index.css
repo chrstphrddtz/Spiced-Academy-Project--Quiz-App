@@ -55,7 +55,11 @@
     background-color: var(--background-color);
     font-size: 1.1rem;
     font-weight: 600;
-    transition: border 2s ease;
+    transition: all 0.5s ease;
+}
+
+.card--show-answer:hover {
+    border-color: var(--accent-color);
 }
 
 
@@ -99,7 +103,7 @@
     align-items: flex-start;
 }
 
-.card__hashtag-container__hashtags li {
+.hashtags {
     list-style: none;
     padding: 5px;
     margin: 5px;
@@ -107,5 +111,11 @@
     background-color: var(--hashtag-color);
     border-radius: 5px;
     font-size: 0.9rem;
+    transition: all 0.5s ease;
 }
 
+.hashtags:hover {
+    /* color: var(--hashtag-text-color--hover); */
+    background-color: var(--hashtag-text-color--hover);
+
+}

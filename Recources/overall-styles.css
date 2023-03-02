@@ -6,6 +6,7 @@
     --background-color: rgb(243, 240, 224);
     --accent-color: rgb(56, 199, 125);
     --hashtag-color: rgb(208, 204, 180);
+    --hashtag-text-color--hover: rgb(190, 99, 140);
 }
 
 * {
@@ -87,34 +88,89 @@ footer {
 }
 
 
-
 /* Media Quesries */
 
 @media screen and (max-width: 1600px) {
+    /* Index */
     .card {
         min-width: 498px;
         width: 40%;
     }
+
+    .navbar {
+        min-width: 498px;
+        width: 40%;
+        margin: auto;
+    }
+
+    /* Profile */
+    .section {
+        min-width: 445px;
+        width: 50%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    /* Index */
     .card {
         min-width: 445px;
         width: 50%;
     }
+
+    .navbar {
+        min-width: 445px;
+        width: 50%;
+        margin: auto;
+    }
+
+    /* Profile */
+    .section {
+        min-width: 445px;
+        width: 50%;
+        margin: auto;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
+    /* Index */
     .card {
         min-width: 364px;
         width: 60%;
-    } 
+    }
+
+    .navbar {
+        min-width: 364px;
+        width: 60%;
+        margin: auto;
+    }
+
+    /* Profile */
+    .section {
+        min-width: 445px;
+        width: 50%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    /* Index */
     .card {
         min-width: 215px;
         width: 80%;
+    }
 
-    }   
+    .navbar {
+        min-width: 215px;
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Profile */
+    .section {
+        min-width: 445px;
+        width: 50%;
+        margin: auto;
+    }
 }
