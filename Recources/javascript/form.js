@@ -11,22 +11,32 @@ form.addEventListener("submit", (e) => {
     const answerInput = formElements.yourAnswer.value
     const hashtagsInput = formElements.yourHashtags.value
 
-    console.log(questionInput, answerInput, hashtagsInput);
 
+    document.body.append(newCard(questionInput, answerInput, hashtagsInput))
 
+    console.log(newCard(questionInput, answerInput, hashtagsInput));
 
 })
+
+
+
 
 const newCard = (question, answer, tags) => {
     const section = document.createElement("section")
     section.classList.add("card")
     // Create all element necesarly
     const bookmark = createBookmark();
-    createCardQuestion(question, answer)
+    const cardQuestion = createCardQuestion(question, answer)
+    const newHashtagContainer = createHashtagContainer(tags)
 
 
     // Append all my new element to the parent.
 
+    section.appendChild(bookmark)
+    section.appendChild(cardQuestion)
+    section.appendChild(newHashtagContainer)
+
+    return section
 
 }
 
@@ -43,7 +53,7 @@ function createCardQuestion(question, answer) {
     cardQuestion.classList.add("card__question")
     // Create elements
     const newQuestion = createTitle(question)
-    const newButton = createButton(button)
+    const newButton = createButton()
     const newAnswer = createAnswer(answer)
 
     // Appends Elements
@@ -55,6 +65,7 @@ function createCardQuestion(question, answer) {
     return cardQuestion
 }
 
+// -- Child of createCardQuestion()
 function createTitle(newQuestion) {
     const question = document.createElement("h2")
     question.classList.add("card__title")
@@ -62,6 +73,7 @@ function createTitle(newQuestion) {
     return question;
 }
 
+// -- Child of createCardQuestion()
 function createButton() {
     const cardButton = document.createElement("button")
     cardButton.classList.add("card--show-answer")
@@ -69,9 +81,45 @@ function createButton() {
     return cardButton
 }
 
+// -- Child of createCardQuestion()
 function createAnswer(newAnswer) {
     const answer = document.createElement("p")
     answer.classList.add("card--hidden-answer")
     answer.textContent = newAnswer
     return answer
 }
+
+
+// Hashtags -> div -> ul -> li
+
+function createHashtagContainer(tags) {
+    const hashtagContainer = document.createElement("div")
+    hashtagContainer.classList.add("card__hashtag-container")
+
+    const newHashtagList = createHashtagList(tags)
+    hashtagContainer.appendChild(newHashtagList)
+
+    return hashtagContainer
+}
+
+// Child of createHashtagContainer
+
+function createHashtagList(tags) {
+    const list = document.createElement("ul")
+    list.classList.add("card__hashtag-container__hashtags")
+
+    const newListItem = createListItem(tags)
+    list.appendChild(newListItem)
+    
+    return list
+}
+
+// Child of createHashtagList
+
+function createListItem(tags) {
+    const listItem = document.createElement("li")
+    listItem.classList.add("hashtags")
+    listItem.textContent = tags
+
+    return listItem
+} 
