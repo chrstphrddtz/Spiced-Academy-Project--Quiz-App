@@ -20,6 +20,8 @@ form.addEventListener("submit", (e) => {
     const hashtagsInput = formElements.yourHashtags.value
 
     main.append(newCard(questionInput, answerInput, hashtagsInput))
+
+    e.target.reset()
 })
 
 // Formfield Text Counter
