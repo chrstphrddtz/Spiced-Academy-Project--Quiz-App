@@ -2,11 +2,6 @@
 
 const form = document.querySelector('[data-js="form"]');
 const textInput = document.getElementsByClassName("form--textarea")
-// const textInput = document.querySelector('[data-js="text-area-one"]')
-
-const textCounterOne = document.querySelector('[data-js="text-counter-one"]')
-const textCounterTwo = document.querySelector('[data-js="text-counter-two"]')
-
 
 // Button 
 form.addEventListener("submit", (e) => {
@@ -29,6 +24,9 @@ form.addEventListener("submit", (e) => {
 for (let i=0; i<textInput.length; i++) {
     textInput[i].addEventListener("keyup", (e) => {
         const formElements = e.target.value.length
+
+        const textCounterOne = document.querySelector('[data-js="text-counter-one"]')
+        const textCounterTwo = document.querySelector('[data-js="text-counter-two"]')
 
         if (textInput[i] == textInput[0]) {
             textCounterOne.textContent = formElements + " / 150"

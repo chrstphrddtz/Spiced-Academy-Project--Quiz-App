@@ -10,7 +10,6 @@ for (let i=0; i<changeBookmarkIconTest.length; i++) {
 };
 
 // Show Answer Button 
-
 const buttons = document.getElementsByClassName("card--show-answer")
 
 for (let i=0; i<buttons.length; i++) {
