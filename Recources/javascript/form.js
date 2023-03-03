@@ -59,6 +59,9 @@ function newCard(question, answer, tags) {
 function createBookmark() {
     const bookmark = document.createElement("div")
     bookmark.classList.add("card--bookmark-icon")
+    bookmark.addEventListener("click", () => {
+        bookmark.classList.toggle("filled")
+    })
     return bookmark;
 }
 
@@ -94,7 +97,14 @@ function createButton() {
     const cardButton = document.createElement("button")
     cardButton.classList.add("card--show-answer")
     cardButton.textContent = "Show Answer"
-    
+    cardButton.addEventListener("click", (e) => {
+        if (e.target.textContent === "Show Answer") {
+            e.target.textContent = "Hide Answer"
+        } else {
+            e.target.textContent = "Show Answer"
+        };
+        e.target.nextElementSibling.classList.toggle("card--visible")
+    })
     return cardButton
 }
 
