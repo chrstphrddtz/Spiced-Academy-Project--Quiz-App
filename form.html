@@ -24,10 +24,12 @@
             <form data-js="form">
                 
                 <label class="form--label" for="yourQuestion">Your Question</label>
-                <textarea class="form--textarea" name="yourQuestion" id="yourQuestion" placeholder="Add your question here ..." cols="30" rows="2" required></textarea>
+                <textarea class="form--textarea" name="yourQuestion" id="yourQuestion" data-js="text-area-one" placeholder="Add your question here ..." cols="30" rows="2" required maxlength="150"></textarea>
+                <div class="form--text-counter" data-js="text-counter-one"> / 150</div>
 
                 <label class="form--label" for="yourAnswer">Your Answer</label>
-                <textarea class="form--textarea" name="yourAnswer" id="yourAnswer" placeholder="Add your answer here ..." cols="30" rows="2"required></textarea>
+                <textarea class="form--textarea" name="yourAnswer" id="yourAnswer" data-js="text-area-two" placeholder="Add your answer here ..." cols="30" rows="2"required maxlength="150"></textarea>
+                <div class="form--text-counter" data-js="text-counter-two"> / 150</div>
 
                 <label class="form--label" for="yourHashtags">Tags</label>
                 <input class="form--textarea" name="yourHashtags" id="yourHashtags" type="text" placeholder="Add your tags here ..." required/>

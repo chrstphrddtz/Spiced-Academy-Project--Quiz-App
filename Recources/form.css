@@ -26,13 +26,18 @@ form {
 .form--textarea {
     resize: none;
     font-size: 1rem;
-    margin: 5px 0 20px 0;
+    margin: 5px 0 5px 0;
     padding: 5px; 
     line-height: 1.5;
     border: 2px solid black;
     border-radius: 5px;
     outline-color: var(--title-footer);
+}
 
+.form--text-counter {
+    font-size: 0.7rem;
+    text-align: right;
+    font-weight: 300;
 }
 
 

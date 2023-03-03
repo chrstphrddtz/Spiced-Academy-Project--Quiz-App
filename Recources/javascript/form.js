@@ -1,7 +1,14 @@
 // Form Functionality 
 
 const form = document.querySelector('[data-js="form"]');
+const textInput = document.getElementsByClassName("form--textarea")
+// const textInput = document.querySelector('[data-js="text-area-one"]')
 
+const textCounterOne = document.querySelector('[data-js="text-counter-one"]')
+const textCounterTwo = document.querySelector('[data-js="text-counter-two"]')
+
+
+// Button 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
 
@@ -12,17 +19,27 @@ form.addEventListener("submit", (e) => {
     const answerInput = formElements.yourAnswer.value
     const hashtagsInput = formElements.yourHashtags.value
 
-
     main.append(newCard(questionInput, answerInput, hashtagsInput))
-
-    console.log(newCard(questionInput, answerInput, hashtagsInput));
-
 })
 
+// Formfield Text Counter
+
+for (let i=0; i<textInput.length; i++) {
+    textInput[i].addEventListener("keyup", (e) => {
+        const formElements = e.target.value.length
+
+        if (textInput[i] == textInput[0]) {
+            textCounterOne.textContent = formElements + " / 150"
+        } else {
+            textCounterTwo.textContent = formElements + " / 150"
+        }
+   })
+};
 
 
+// Create Card Elements
 
-const newCard = (question, answer, tags) => {
+function newCard(question, answer, tags) {
     const section = document.createElement("section")
     section.classList.add("card")
     // Create all element necesarly
@@ -30,15 +47,12 @@ const newCard = (question, answer, tags) => {
     const cardQuestion = createCardQuestion(question, answer)
     const newHashtagContainer = createHashtagContainer(tags)
 
-
     // Append all my new element to the parent.
-
     section.appendChild(bookmark)
     section.appendChild(cardQuestion)
     section.appendChild(newHashtagContainer)
 
     return section
-
 }
 
 // Bookmark - Div
@@ -71,6 +85,7 @@ function createTitle(newQuestion) {
     const question = document.createElement("h2")
     question.classList.add("card__title")
     question.textContent = newQuestion
+
     return question;
 }
 
@@ -79,6 +94,7 @@ function createButton() {
     const cardButton = document.createElement("button")
     cardButton.classList.add("card--show-answer")
     cardButton.textContent = "Show Answer"
+    
     return cardButton
 }
 
@@ -87,12 +103,11 @@ function createAnswer(newAnswer) {
     const answer = document.createElement("p")
     answer.classList.add("card--hidden-answer")
     answer.textContent = newAnswer
+    
     return answer
 }
 
-
 // Hashtags -> div -> ul -> li
-
 function createHashtagContainer(tags) {
     const hashtagContainer = document.createElement("div")
     hashtagContainer.classList.add("card__hashtag-container")
@@ -104,7 +119,6 @@ function createHashtagContainer(tags) {
 }
 
 // Child of createHashtagContainer
-
 function createHashtagList(tags) {
     const list = document.createElement("ul")
     list.classList.add("card__hashtag-container__hashtags")
@@ -116,11 +130,13 @@ function createHashtagList(tags) {
 }
 
 // Child of createHashtagList
-
 function createListItem(tags) {
     const listItem = document.createElement("li")
     listItem.classList.add("hashtags")
     listItem.textContent = "#" + tags
 
     return listItem
-} 
+}
+
+
+
