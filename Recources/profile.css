@@ -92,6 +92,7 @@
 .settings__dark-mode__icon {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     border: 2px solid black;
     height: 30px;
     width: 60px;
@@ -105,5 +106,12 @@
     border-radius: 50%;
     background-color: rgb(31, 31, 31);  
 }
+
+.settings__dark-mode__position {
+    justify-content: flex-end;
+}
+
+
+
 
 /* Others */
