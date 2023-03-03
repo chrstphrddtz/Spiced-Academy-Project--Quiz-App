@@ -97,6 +97,8 @@
     height: 30px;
     width: 60px;
     border-radius: 25px;
+    background-color: rgb(231, 81, 81);
+    transition: all 0.3s ease-out;
 }
 
 .settings__dark-mode__switch {
@@ -109,6 +111,7 @@
 
 .settings__dark-mode__position {
     justify-content: flex-end;
+    background-color: rgb(81, 231, 81);
 }
 
 
