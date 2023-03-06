@@ -115,6 +115,23 @@
 }
 
 
+/* -- -- Active Dark Mode */
+
+.settings__active-dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.settings__active-dark-mode__border {
+    border: 2px solid white;
+}
+
+.settings__active-dark-mode__icon-background {
+    background-color: white;
+    color: black;
+} 
+
+
 
 
 /* Others */
