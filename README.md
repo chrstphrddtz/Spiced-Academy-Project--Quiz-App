@@ -1,6 +1,6 @@
 # Recap Project: Quiz App
 
-link(https://chrstphrddtz.github.io/spiced-project-001/)
+https://chrstphrddtz.github.io/spiced-project-001/
 
 ## Part I - Layout
 
