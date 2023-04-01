@@ -1,10 +1,11 @@
-# Recap Project: Quiz App
+# Recap Project Part I and Part II: Quiz App
 
 https://chrstphrddtz.github.io/spiced-project-001/
 
 ## Part I - Layout
 
-In this project I build the layout of my first mobile web application, a quiz app. In later projects I will expand this app and add all sorts of cool functionality. In this app you will be able to:
+In Part I of this project I built the layout of my first mobile web application, a quiz app. 
+In this app you will be able to:
 
 - Read questions and click buttons to look up the answers.
 - Bookmark questions and view them on a bookmarks page.
